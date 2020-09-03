@@ -1,22 +1,438 @@
+
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!--  Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!-- FontAwesome JS -->
+    <script src="https://kit.fontawesome.com/2f158531bd.js" crossorigin="anonymous"></script>
+    <!-- css.gg -->
+    <link href='https://css.gg/css' rel='stylesheet'>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+    <title>AMtech</title>
+</head>
+<body>
+<div class="container main-header">
+    <div class="row bg-light justify-content-between align-content-center py-2">
+        <div class="col-6 d-none d-md-block">
+            <div class="row align-content-center justify-content-between h-100">
+                <div class="col-md-auto">tel:+37491300377</div>
+             
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="row justify-content-end">
+                <div class="col-12 col-md-auto mb-2 mb-md-0">
+                    <form>
+                        <select class="custom-select">
+                            <option value="1">AM</option>
+                            <option value="2">RU</option>
+                            <option value="3">EN</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="col-12 col-md-auto">
+                    <form>
+                        <select class="custom-select">
+                            <option value="1">&euro;</option>
+                            <option value="2">$</option>
+                            <option value="3">&#1423;</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="d-none d-md-block col-auto">
+                    <button type="button" class="btn btn-info w-100">
+                        Notifications <span class="badge badge-danger">7</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row py-2 bg-dark">
+        <div class="col-4 justify-content-between d-flex">
+            <a class="navbar-brand" href="index.html">AmTech</a>
+        </div>
+        <div class="col-8 bg-dark justify-content-end d-flex">
+            <div class="col-md-auto d-none d-md-block">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    My Account
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Login</a>
+                    <a class="dropdown-item" href="#">Register</a>
+                    <a class="dropdown-item" href="#">My Orders</a>
+                    <a class="dropdown-item" href="#">Account Settings</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <nav class="navbar navbar-expand-md navbar-light badge-danger w-100">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </body>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav justify-content-between d-flex w-100">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Photography
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="shop.html">Digital Cameras</a>
+                            <a class="dropdown-item" href="shop.html">Drones & Aerial Imaging</a>
+                            <a class="dropdown-item" href="shop.html">Lenses</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Computers
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="shop.html">Sub Category 1</a>
+                            <a class="dropdown-item" href="shop.html">Sub Category 1</a>
+                            <a class="dropdown-item" href="shop.html">Sub Category 1</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pro Video
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="shop.html">Sub Category 1</a>
+                            <a class="dropdown-item" href="shop.html">Sub Category 1</a>
+                            <a class="dropdown-item" href="shop.html">Sub Category 1</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pro Audio
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="shop.html">Sub Category 1</a>
+                            <a class="dropdown-item" href="shop.html">Sub Category 1</a>
+                            <a class="dropdown-item" href="shop.html">Sub Category 1</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Mobile
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="shop.html">Sub Category 1</a>
+                            <a class="dropdown-item" href="shop.html">Sub Category 1</a>
+                            <a class="dropdown-item" href="shop.html">Sub Category 1</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            TVs&Entertaninment
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="shop.html">Sub Category 1</a>
+                            <a class="dropdown-item" href="shop.html">Sub Category 1</a>
+                            <a class="dropdown-item" href="shop.html">Sub Category 1</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 mt-2">
+            
+        </div>
+    </div>
+    <div class="row mb-4 justify-content-center no-gutters">
+        <div class="d-none d-md-block col-md-12">
+            <div id="homeCarousel" class="carousel bg-dark pb-5 pt-2" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#homeCarousel" data-slide-to="1"></li>
+                    <li data-target="#homeCarousel" data-slide-to="2"></li>
+                    <li data-target="#homeCarousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-3">
+                                <img src="https://static.bhphoto.com/images/images2000x2000/1588616030_1560565.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-4">
+                                <div class="carousel-caption text-left">
+                                    <h5>Apple 16" MacBook Pro 2019 (Space Gray)</h5>
+
+                                    <p>The Apple 16" MacBook Pro features a 16" Retina Display, a Magic Keyboard with a redesigned scissor mechanism.</p>
+                                    <a href="#" class="btn btn-primary" role="button">Add to cart</a>
+                                    <a href="product.html" class="btn btn-success" role="button">View item</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-4">
+                                <div class="carousel-caption text-right">
+                                    <h5>Apple iPad Pro 12.9" </h5>
+                                    <p>(64GB, Wi-Fi + 4G LTE, Space Gray, Previous Gen)</p>
+                                    <a href="#" class="btn btn-primary" role="button">Add to cart</a>
+                                    <a href="product.html" class="btn btn-success" role="button">View item</a>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <img src="https://static.bhphoto.com/images/images500x500/apple_mthl2ll_a_ipad_pro_64gb_wi_fi_1592330791_1568358.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-3">
+                                <img src="https://static.bhphoto.com/images/images500x500/sony_playstation_4_pro_gaming_1479467193_1298950.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-4">
+                                <div class="carousel-caption text-left">
+                                    <h5>Sony PlayStation 4 Pro Gaming Console</h5>
+                                    <p>Go beyond 1080p with the Sony PlayStation 4 Pro Gaming Console. With updated graphics architecture and support for 4K gaming. </p>
+                                    <a href="#" class="btn btn-primary" role="button">Add to cart</a>
+                                    <a href="product.html" class="btn btn-success" role="button">View item</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-4">
+                                <div class="carousel-caption text-right">
+                                    <h5>Sony Cyber-shot DSC-RX10 </h5>
+                                    <p>Providing speed, reach, and versatile recording features, the Cyber-shot DSC-RX10 IV from Sony is a compact solution for the multimedia image-makers. </p>
+                                    <a href="#" class="btn btn-primary" role="button">Add to cart</a>
+                                    <a href="product.html" class="btn btn-success" role="button">View item</a>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <img src="https://static.bhphoto.com/images/images500x500/sony_sony_rx10iv_digital_camera_1505211780_1361560.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center bg-primary pb-4">
+        <h1 class="col-12 display-4 text-center mb-3">Daily Deals</h1>
+        <div class="card col-md-2 col-12 text-center mr-2">
+            <img img src="https://static.bhphoto.com/images/images2000x2000/1588616030_1560565.jpg" alt="" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Apple 16" MacBook Pro 2019 (Space Gray)</h5>
+                <h5 class="text-danger">$ 795,99 <br><del class="text-info">$ 695</del></h5>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+        <div class="card col-md-2 col-12 text-center mr-2">
+            <img img src="https://static.bhphoto.com/images/images500x500/sony_sony_rx10iv_digital_camera_1505211780_1361560.jpg" alt="" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Sony Cyber-shot DSC-RX10</h5>
+                <h5 class="text-danger">$ 795,99 <br><del class="text-info">$ 695</del></h5>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+        <div class="card col-md-2 col-12 text-center mr-2">
+            <img img src="https://static.bhphoto.com/images/images500x500/apple_mthl2ll_a_ipad_pro_64gb_wi_fi_1592330791_1568358.jpg" alt="" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Apple iPad Pro 12.9"</h5>
+                <h5 class="text-danger">$ 795,99 <br><del class="text-info">$ 695</del></h5>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+        <div class="card col-md-2 col-12 text-center mr-2">
+            <img img src="https://static.bhphoto.com/images/images500x500/sony_playstation_4_pro_gaming_1479467193_1298950.jpg" alt="" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">PlayStation 4 Pro</h5>
+                <h5 class="text-danger">$ 795,99 <br><del class="text-info">$ 695</del></h5>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+        <div class="card col-md-2 col-12 text-center mr-2">
+            <img img src="https://static.bhphoto.com/images/images500x500/samsung_sm_n976b512glw_galaxy_note_10_512gb_1597230406_1583391.jpg" alt="" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Samsung Galaxy Note 10+</h5>
+                <h5 class="text-danger">$ 795,99 <br><del class="text-info">$ 695</del></h5>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center badge-warning pb-2">
+        <h2 class="col-12 text-center display-4 text-white">Products May Interest</h2>
+        <div class="col-6 col-md-1 col-sm-auto text-center m-0 m-md-2 border p-0 p-md-2 rounded bg-light m-sm-0 p-sm-0">
+            <img src="https://static.bhphoto.com/images/images500x500/sony_sony_rx10iv_digital_camera_1505211780_1361560.jpg" alt="" class="d-none d-md-block img-fluid mb-3">
+            <a href="shop.html" class="btn-sm btn btn-outline-success stretched-link">Cameras</a>
+        </div>
+        <div class="col-6 col-md-1 col-sm-auto text-center m-0 m-md-2 border p-0 p-md-2 rounded bg-light m-sm-0 p-sm-0">
+            <img src="https://static.bhphoto.com/images/images2000x2000/1588616030_1560565.jpg" alt="" class="d-none d-md-block img-fluid mb-3">
+            <a href="shop.html" class="btn-sm btn btn-outline-success stretched-link">Mac</a>
+        </div>
+        <div class="col-6 col-md-1 col-sm-auto text-center m-0 m-md-2 border p-0 p-md-2 rounded bg-light m-sm-0 p-sm-0">
+            <img src="https://static.bhphoto.com/images/images500x500/lenovo_81y60004us_15_6_legion_5_gaming_1587339990_1543440.jpg" alt="" class="d-none d-md-block img-fluid mb-3">
+            <a href="shop.html" class="btn-sm btn btn-outline-success stretched-link">Laptops</a>
+        </div>
+        <div class="col-6 col-md-1 col-sm-auto text-center m-0 m-md-2 border p-0 p-md-2 rounded bg-light m-sm-0 p-sm-0">
+            <img src="https://static.bhphoto.com/images/images345x345/1456217407_1222976.jpg" alt="" class="d-none d-md-block img-fluid mb-3">
+            <a href="shop.html" class="btn-sm btn btn-outline-success stretched-link">Camcorder</a>
+        </div>
+        <div class="col-6 col-md-1 col-sm-auto text-center m-0 m-md-2 border p-0 p-md-2 rounded bg-light m-sm-0 p-sm-0">
+            <img src="https://static.bhphoto.com/images/images500x500/samsung_sm_a515fzwjtpa_a51_a515f_128gb_dual_sim_1577112658_1532019.jpg" alt="" class="d-none d-md-block img-fluid mb-3">
+            <a href="shop.html" class="btn-sm btn btn-outline-success stretched-link">Mobile</a>
+        </div>
+        <div class="col-6 col-md-1 col-sm-auto text-center m-0 m-md-2 border p-0 p-md-2 rounded bg-light m-sm-0 p-sm-0">
+            <img src="https://static.bhphoto.com/images/images500x500/apple_mthl2ll_a_ipad_pro_64gb_wi_fi_1592330791_1568358.jpg" alt="" class="d-none d-md-block img-fluid mb-3">
+            <a href="shop.html" class="btn-sm btn btn-outline-success stretched-link">Ipads</a>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-6 col-md-1 col-sm-auto text-center m-0 m-md-2 border p-0 p-md-2 rounded bg-light m-sm-0 p-sm-0">
+            <img src="https://static.bhphoto.com/images/multiple_images/images500x500/1589997640_IMG_1362389.jpg" alt="" class="d-none d-md-block img-fluid mb-3">
+            <a href="shop.html" class="btn-sm btn btn-outline-success stretched-link">Tablets</a>
+        </div>
+        <div class="col-6 col-md-1 col-sm-auto text-center m-0 m-md-2 border p-0 p-md-2 rounded bg-light m-sm-0 p-sm-0">
+            <img src="https://static.bhphoto.com/images/multiple_images/images500x500/1568143848_IMG_1250131.jpg" alt="" class="d-none d-md-block img-fluid mb-3">
+            <a href="shop.html" class="btn-sm btn btn-outline-success stretched-link">Watches</a>
+        </div>
+        <div class="col-6 col-md-1 col-sm-auto text-center m-0 m-md-2 border p-0 p-md-2 rounded bg-light m-sm-0 p-sm-0">
+            <img src="https://static.bhphoto.com/images/multiple_images/images500x500/1581949835_IMG_1318918.jpg" alt="" class="d-none d-md-block img-fluid mb-3">
+            <a href="shop.html" class="btn-sm btn btn-outline-success stretched-link">TV</a>
+        </div>
+        <div class="col-6 col-md-1 col-sm-auto text-center m-0 m-md-2 border p-0 p-md-2 rounded bg-light m-sm-0 p-sm-0">
+            <img src="https://static.bhphoto.com/images/multiple_images/images500x500/1505322026_IMG_869633.jpg" alt="" class="d-none d-md-block img-fluid mb-3">
+            <a href="shop.html" class="btn-sm btn btn-outline-success stretched-link">Apple TV</a>
+        </div>
+        <div class="col-6 col-md-1 col-sm-auto text-center m-0 m-md-2 border p-0 p-md-2 rounded bg-light m-sm-0 p-sm-0">
+            <img src="https://static.bhphoto.com/images/multiple_images/images500x500/1486394137_IMG_747978.jpg" alt="" class="d-none d-md-block img-fluid mb-3">
+            <a href="shop.html" class="btn-sm btn btn-outline-success stretched-link">Optics</a>
+        </div>
+        <div class="col-6 col-md-1 col-sm-auto text-center m-0 m-md-2 border p-0 p-md-2 rounded bg-light m-sm-0 p-sm-0">
+            <img src="https://static.bhphoto.com/images/images500x500/lg_pf50ka_fhd_led_600_lumens_1521032879_1395128.jpg" alt="" class="d-none d-md-block img-fluid mb-3">
+            <a href="shop.html" class="btn-sm btn btn-outline-success stretched-link">Projectors</a>
+        </div>
+    </div>
+    <div class="row justify-content-center pb-4">
+        <h1 class="col-12 display-4 text-center mb-3">New Arrivals</h1>
+        <div class="card col-md-2 col-12 text-center p-2">
+            <img img src="https://static.bhphoto.com/images/images500x500/samsung_sm_n976b512glw_galaxy_note_10_512gb_1597230406_1583391.jpg" alt="" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Samsung Galaxy S10+</h5>
+                <h5 class="text-danger">$ 295,99 <br><del class="text-info">$ 200</del></h5>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+        <div class="card col-md-2 col-12 text-center p-2">
+            <img img src="https://static.bhphoto.com/images/multiple_images/images500x500/1576148625_IMG_1289426.jpg" alt="" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Apple MAC Pro</h5>
+                <h5 class="text-danger">$ 295,99 <br><del class="text-info">$ 200</del></h5>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+        <div class="card col-md-2 col-12 text-center p-2">
+            <img img src="https://static.bhphoto.com/images/images500x500/acer_nh_q5uaa_008_nitro_i5_9300h_8gb_512gb_ssd_1589467564_1560811.jpg" alt="" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Acer 15.6" Nitro 5</h5>
+                <h5 class="text-danger">$ 295,99 <br><del class="text-info">$ 200</del></h5>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+        <div class="card col-md-2 col-12 text-center p-2">
+            <img img src="https://cdn2.from.ae/media/catalog/product/cache/image/9df78eab33525d08d6e5fb8d27136e95/0/1/01_160_14_2.jpg" alt="" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Apple iPhone 11 Pro Max</h5>
+                <h5 class="text-danger">$ 295,99 <br><del class="text-info">$ 200</del></h5>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+        <div class="card col-md-2 col-12 text-center p-2">
+            <img img src="https://static.bhphoto.com/images/images500x500/1562676502_1492872.jpg" alt="" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">MacBook Air 13.3" 2019</h5>
+                <h5 class="text-danger">$ 295,99 <br><del class="text-info">$ 200</del></h5>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+        <div class="card col-md-2 col-12 text-center p-2">
+            <img img src="https://cameratimes.org/wp-content/uploads/2020/02/Canon-EOS-R5-mirrorless-camera-1.jpg" alt="" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Canon EOS R5</h5>
+                <h5 class="text-danger">$295,99 295,99 <br><del class="text-info">$ 200</del></h5>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container main-footer">
+    <div class="row">
+        <div class="col-12 p-0">
+            <ul class="list-group list-group-horizontal-md w-100 justify-content-around text-uppercase font-weight-bold">
+                <li class="border rounded-0 list-group-item flex-grow-1 text-center"><a
+                        class="stretched-link text-secondary" href="#">Contact Us</a></li>
+                <li class="border rounded-0 list-group-item flex-grow-1 text-center"><a
+                        class="stretched-link text-secondary" href="#">Live Chat</a></li>
+                <li class="border rounded-0 list-group-item flex-grow-1 text-center"><a
+                        class="stretched-link text-secondary" href="#">Shipping</a></li>
+                <li class="border rounded-0 list-group-item flex-grow-1 text-center"><a
+                        class="stretched-link text-secondary" href="#">Term & Conditions</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="row align-items-center h-100 bg-dark">
+        <div class="col-auto flex-grow-0 py-3 d-none d-md-block text-danger">
+            <span>find us on: </span>
+        </div>
+        <div class="col-12 col-md-auto text-center mr-auto">
+            <a href="#" class="align-middle p-2 d-inline-block text-danger"><i class="gg-facebook"></i></a>
+            <a href="#" class="align-middle p-2 d-inline-block text-danger"><i class="gg-instagram"></i></a>
+            
+        </div>
+        
+    </div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
 </html>
